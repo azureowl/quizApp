@@ -105,13 +105,9 @@ button, .read-more {
 }
 
 .goal {
-    color: #4caf50;
+    color: #224F23;
     font-size: 18px;
     text-align: center;
-}
-
-.condition-win {
-    color: #ff9c09;
 }
 
 .feedback-container {
@@ -189,9 +185,9 @@ form button {
 
 .read-more button {
     background-color: #cae8ce;
-    border: 1px solid #3d586d;
+    border: 1px solid #35485F;
     display: inline-block;
-    color: #3d586d;
+    color: #35485F;
     font-size: 16px;
     padding: 2px;
     text-decoration: none;
@@ -233,7 +229,7 @@ input[type="radio"]:checked + label, .incorrect {
 }
 
 .read-more button:focus {
-    color: #8bc34a;
+    color: #1D00EB;
     border: 1px solid #8bc34a;
 }
 

@@ -9,7 +9,7 @@ function startQuiz () {
 function renderQuiz () {
     let questionProgress = tracker.questionNumber;
     if (questionProgress <= 10) {
-        $('.js-fun-fact').html('<p class="goal">Each correct answer awards you a rung for your ladder. Collect <span class="condition-win">8</span> or more to reach the jar of honey!</p>');
+        $('.js-fun-fact').html('<p class="goal">Each correct answer awards you a rung for your ladder. Collect 8 or more to reach the jar of honey!</p>');
         renderQuestion();
         displayScore();
         displayQuestionsLeft();
