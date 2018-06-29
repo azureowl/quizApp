@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Quiz your knowledge about bees and honey!">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Hungry for Hunny Quiz</title>
+</head>
+<body>
+    <header role="banner">
+        <div class="row">
+            <div class="col col-12 heading">
+                <h1>Hungry for Hunny</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-12 initializer">
+            <button class="js-start-quiz start">Start Quiz</button>
+        </div>
+    </div>
+
+    <main role="main" class='js-hidden'>
+        <section role="region" aria-live="polite">
+            <h2 class="hide">Win the honey pot by answering each question correctly.</h2>
+            <div class="row feedback">
+                <span class="read-more"><button type="button">Read More</button></span>
+                <div class="col col-12 feedback-container">
+                    <div class="js-fun-fact"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-6 content-container">
+                    <div class="col col-12 result js-final-result js-hidden">
+                            <p>Nice Job! You scored <span class="js-score">0</span>/10. <span class="js-honey-acquired"></span></p>
+                            <button class="js-restart" type="button">Restart</button>
+                    </div>
+                    <form class="js-form"></form>
+                    <div>
+                        <p class="tracker">Score: <span class="js-score">0</span>/10 <span>Question <span class="js-question-progress">1</span> of 10</span></p>
+                    </div>
+                </div>
+
+                <div class="col col-6 content-container canvas">
+                    <!-- Canvas image -->
+                    <canvas id="canvas" width="300" height="350" aria-hidden="true">
+                        Ah, shucks! Your browser does not support the totally awesome &lt;canvas&gt;.
+                    </canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/data.js"></script>
+    <script src="js/canvasImg.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="js/m_interface.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
